@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -8,7 +8,43 @@
   
   
 }
-
-.h1{
-  font-size: 100px;
+.navbar {
+  display: block;
 }
+
+
+.titulo{
+  color: blueviolet;
+  font-size: xx-large;
+ }
+ 
+.container{
+  display: flex;
+}
+
+.contador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+.catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: fit-content;
+  
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+.catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+

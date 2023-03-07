@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "nombre": "mesa industrial",
+        "categoria": "mesas",
+        "stock": "10",
+        "desc": "Mesa de Caño y Madera",
+        "precio": "60000",
+        "img": "/mesa.jpg"
+      },
+      {
+        "id": "2",
+        "nombre": "mesa vidriada",
+        "categoria": "mesas",
+        "stock": "8",
+        "desc": "Soporte de Caño y Vidrio Templado",
+        "precio": "50000",
+        "img": "/mesavidrios.jpg"
+      },
+      {
+        "id": "3",
+        "nombre": "silla",
+        "categoria": "sillas",
+        "stock": "24",
+        "desc": "Silla de Material Aluminio",
+        "precio": "12000",
+        "img": "/sillas.jpg"
+      },
+      {
+        "id": "4",
+        "nombre": "Racks",
+        "categoria": "muebles",
+        "stock": "5",
+        "desc": "Mueble de Madera con Soporte en Chapa",
+        "precio": "45000",
+        "img": "/mueble.jpg"
+      },
+      {
+        "id": "5",
+        "nombre": "Decoraciones ",
+        "categoria": "decoraciones",
+        "stock": "6",
+        "desc": "Arquitectura Industrial",
+        "precio": "40000",
+        "img": "/exteriores.jpg"
+      },
+      {
+        "id": "6",
+        "nombre": "Escritorio ",
+        "categoria": "escritorios",
+        "stock": "9",
+        "desc": "Escritorio Rustico",
+        "precio": "20000",
+        "img": "/escritorio.jpg"
+      }
+
+]

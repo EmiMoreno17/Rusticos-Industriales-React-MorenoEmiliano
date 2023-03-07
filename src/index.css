@@ -3,4 +3,45 @@
   line-height: 1.5;
   font-weight: 400;
 }
+.h1{
+  font-size: 100px;
+  font-weight: 100px;
+}
+.navbar {
+  display: block;
+}
 
+
+.titulo{
+  color: blueviolet;
+  font-size: xx-large;
+ }
+ 
+.container{
+  display: flex;
+}
+
+.contador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+.catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: fit-content;
+  max-width: fit-content;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chakra-container.catalogo.css-tmo6lc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}

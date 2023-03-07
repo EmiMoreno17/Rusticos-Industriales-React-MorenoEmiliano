@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import CartWidget from "./CartWidget";
-import { Button, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
+import { Button, Menu, MenuButton, MenuList, MenuItem, Image} from '@chakra-ui/react';
 import { Grid } from '@chakra-ui/react'
+import { Link } from "react-router-dom";
+
+
+
 
 const NavBar = () => {
 
@@ -11,24 +15,51 @@ const NavBar = () => {
         
 
         
-        <div>
-            <Grid templateColumns='repeat(3, 1fr)' gap={10}>
-                <h1>Rusticos Industriales</h1> 
+        <div className=" navbar">
+        
+            <Grid templateColumns='repeat(4, 1fr)' gap={10}>
+                <Link to="/">
+                <Image
+                    borderRadius='full'
+                    boxSize='150px'
+                    src="../logo.png"
+                    alt='Dan Abramov'
+                />
+                </Link>
                 <Menu>
-                    <MenuButton as={Button}>Productos</MenuButton>
+                    <MenuButton as={Button} variant="outline" colorScheme="blue" >Categorias</MenuButton>
                         <MenuList>
-                            <MenuItem>Producto 1</MenuItem>
-                            <MenuItem>Producto 2</MenuItem>
-                            <MenuItem>Producto 3</MenuItem>
-                            <MenuItem>Producto 4</MenuItem>
+                            <Link to={`/categoria/${"mesas"}`}>
+                                <MenuItem>Mesas</MenuItem>
+                             </Link>
+                             <Link to={`/categoria/${"sillas"}`}>
+                                <MenuItem>Sillas</MenuItem>
+                             </Link>
+                             <Link to={`/categoria/${"decoraciones"}`}>
+                                <MenuItem>Decoraciones</MenuItem>
+                             </Link>
+                             <Link to={`/categoria/${"muebles"}`}>
+                                <MenuItem>Racks</MenuItem>
+                             </Link>
+                             <Link to={`/categoria/${"escritorios"}`}>
+                                <MenuItem>Escritorios</MenuItem>
+                             </Link>
                         </MenuList>
                 </Menu>
+                <Menu>
+                    <Link to={"/productos"}>
+                        <MenuButton as={Button} variant="outline" colorScheme="blue" >Productos</MenuButton>
+                    </Link>
+
+                </Menu>
+                <Link to={"/cart"}>
                 <CartWidget />
- 
+                </Link>
             </Grid>
         </div>
+
         
-        
+                    
         </>
 
 
